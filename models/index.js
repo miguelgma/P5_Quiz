@@ -17,6 +17,7 @@ sequelize.sync()
 	if(!count){
 		console.log("Todas las preguntas");
 		return quizzes.bulkCreate([
+			{question:"Pregunta Número 1",answer:"respuesta"},
 			{question: "Captial de Italia", answer: "Roma"},
 	 		{question: "Capital de Francia", answer: "París"},
 	 		{question: "Capital de España", answer: "Madrid"},
